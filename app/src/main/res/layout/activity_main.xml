@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/main_timefuction_btn"
+        android:layout_width="match_parent"
+        android:text="时间和日期函数操作"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/main_cp_btn"
+        android:layout_width="match_parent"
+        android:text="ContentProvider实现数据库实时刷新"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/main_rxjava_btn"
+        android:layout_width="match_parent"
+        android:text="RxJava实现数据库实时刷新"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
