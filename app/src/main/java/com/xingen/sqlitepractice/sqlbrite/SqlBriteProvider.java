@@ -22,14 +22,27 @@ public class SqlBriteProvider {
         this.sqlBrite=providerSqlBrite();
         this.briteDatabase=createDatabase(this.sqlBrite,providerOpenHelper(context));
     }
+
+    /**
+     * 创建SQLiteOpenHelper对象
+     * @param context
+     * @return
+     */
     private SQLiteOpenHelper providerOpenHelper(Context context){
         return  new DataHelper(context);
     }
+
+    /**
+     *
+     * 创建SqlBrite对象
+     *
+     * @return
+     */
     private SqlBrite providerSqlBrite(){
         return  new SqlBrite.Builder().build();
     }
     /**
-     * 创建数据库
+     * 通过SQLBrite对象和SQLiteOpenHel对象
      * @param sqlBrite
      * @param sqLiteOpenHelper
      * @return
@@ -38,7 +51,6 @@ public class SqlBriteProvider {
         BriteDatabase db=sqlBrite.wrapDatabaseHelper(sqLiteOpenHelper, Schedulers.io());
         return db;
     }
-
     /**
      * 获取到项目默认的数据库
      * @return

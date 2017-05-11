@@ -81,7 +81,7 @@ public class RxJavaSQLBriteActivity extends AppCompatActivity implements View.On
      */
     private void excuteQuery() {
         //Observable<SqlBrite.Query> observable
-        QueryObservable observable = this.db.createQuery(Data.TABLE_NAME, "select * from message", null);
+        QueryObservable observable = this.db.createQuery(Data.TABLE_NAME, "select * from message ORDER BY "+Data.ORDER_BY, null);
         suscription = observable.observeOn(AndroidSchedulers.mainThread()).subscribe(new Action1<SqlBrite.Query>() {
             @Override
             public void call(SqlBrite.Query query) {
