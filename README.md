@@ -9,6 +9,8 @@ Android开发中数据库常见案例：
 
 4. 拷贝外部db文件到数据库，这里实现城市选择的功能。
 
+以上，每个案例的博客介绍，请阅读[SQLite常见案例教程](http://blog.csdn.net/hexingen/article/category/6381115)
+
 ## SQLite ##
 
 **1. 简介：**
