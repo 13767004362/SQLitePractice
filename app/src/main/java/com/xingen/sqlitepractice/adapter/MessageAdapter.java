@@ -7,9 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.xingen.sqlitepractice.R;
-import com.xingen.sqlitepractice.orm.Message;
-
-import org.w3c.dom.Text;
+import com.xingen.sqlitepractice.orm.message.Message;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -3,6 +3,8 @@
     package="com.xingen.sqlitepractice">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:name=".base.BaseApplication"
         android:allowBackup="true"
@@ -29,6 +31,12 @@
 
         </activity>
 
+        <activity android:name=".activity.CitySelectActivity">
+
+        </activity>
+        <service android:name=".service.WriteCityDBIntentService">
+
+        </service>
         <provider
             android:name=".db.DataContentProvider"
             android:authorities="com.xingen.sqlitepractice.db.DataContentProvider"

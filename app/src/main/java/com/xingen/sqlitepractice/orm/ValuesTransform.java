@@ -4,6 +4,9 @@ import android.content.ContentValues;
 import android.database.Cursor;
 
 import com.xingen.sqlitepractice.db.Data;
+import com.xingen.sqlitepractice.orm.city.City;
+import com.xingen.sqlitepractice.orm.message.Message;
+import com.xingen.sqlitepractice.orm.province.Province;
 
 /**
  * Created by ${新根} on 2017/5/7 0007.
@@ -36,5 +39,28 @@ public class ValuesTransform {
         contentValues.put(Data.COLUMN_CONTENT,message.getContent());
         contentValues.put(Data.COLUMN_DATE,message.getDate());
         return  contentValues;
+    }
+
+    /**
+     * 从Cursor生成City对象
+     * @param cursor
+     * @return
+     */
+    public static City transformCity(Cursor cursor){
+        City city=new City();
+        city.setCname(cursor.getString(cursor.getColumnIndex(WriterDBUtils.COLUMN_CNAME)));
+        return  city;
+    }
+
+    /**
+     * 从Cursor生成Province对象
+     * @param cursor
+     * @return
+     */
+    public static Province transformProvince(Cursor cursor){
+        Province province = new Province();
+        province.setPid(cursor.getInt(cursor.getColumnIndex(WriterDBUtils.COLUMN_PID)));
+        province.setPname(cursor.getString(cursor.getColumnIndex(WriterDBUtils.COLUMN_PNAME)));
+        return  province;
     }
 }

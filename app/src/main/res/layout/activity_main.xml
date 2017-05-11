@@ -20,4 +20,10 @@
         android:text="RxJava实现数据库实时刷新"
         android:layout_marginTop="20dp"
         android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/main_writedb_btn"
+        android:layout_width="match_parent"
+        android:text="拷贝外部db文件数据库"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content" />
 </LinearLayout>

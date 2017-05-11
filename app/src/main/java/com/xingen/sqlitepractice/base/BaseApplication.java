@@ -3,8 +3,8 @@ package com.xingen.sqlitepractice.base;
 import android.app.Application;
 
 import com.xingen.sqlitepractice.orm.DAO;
-import com.xingen.sqlitepractice.orm.Message;
-import com.xingen.sqlitepractice.orm.MessageDAO;
+import com.xingen.sqlitepractice.orm.message.Message;
+import com.xingen.sqlitepractice.orm.message.MessageDAO;
 import com.xingen.sqlitepractice.sqlbrite.SqlBriteProvider;
 
 /**

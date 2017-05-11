@@ -1,4 +1,4 @@
-package com.xingen.sqlitepractice.orm;
+package com.xingen.sqlitepractice.orm.message;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -6,6 +6,8 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.xingen.sqlitepractice.db.Data;
 import com.xingen.sqlitepractice.db.DataHelper;
+import com.xingen.sqlitepractice.orm.DAO;
+import com.xingen.sqlitepractice.orm.ValuesTransform;
 
 import java.util.ArrayList;
 import java.util.List;

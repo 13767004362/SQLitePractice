@@ -1,6 +1,5 @@
 package com.xingen.sqlitepractice.activity;
 
-import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -16,7 +15,7 @@ import android.widget.ListView;
 import com.xingen.sqlitepractice.R;
 import com.xingen.sqlitepractice.adapter.MessageAdapter;
 import com.xingen.sqlitepractice.db.Data;
-import com.xingen.sqlitepractice.orm.Message;
+import com.xingen.sqlitepractice.orm.message.Message;
 import com.xingen.sqlitepractice.orm.ValuesTransform;
 
 import java.util.ArrayList;

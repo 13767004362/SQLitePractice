@@ -11,7 +11,7 @@ import com.xingen.sqlitepractice.R;
 import com.xingen.sqlitepractice.adapter.MessageAdapter;
 import com.xingen.sqlitepractice.base.BaseApplication;
 import com.xingen.sqlitepractice.db.Data;
-import com.xingen.sqlitepractice.orm.Message;
+import com.xingen.sqlitepractice.orm.message.Message;
 
 import java.util.List;
 

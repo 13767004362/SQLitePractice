@@ -1,4 +1,4 @@
-package com.xingen.sqlitepractice.orm;
+package com.xingen.sqlitepractice.orm.message;
 
 /**
  * Created by ${新根} on 2017/5/7 0007.
