@@ -1,1 +1,1 @@
-include ':app', ':MJPayClient'
+include ':app'
